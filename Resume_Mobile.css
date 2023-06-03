@@ -1,0 +1,317 @@
+@media only screen and (max-width: 767px) {
+    body {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: url(Resources/wp10833421-4k-vector-phone-wallpapers.jpg);
+        background-size: cover;
+        background-position: center;
+        overflow-y: hidden;
+    }
+    * {
+     font-family: Arial;
+    }
+    .grid-container {
+      width: inherit;
+      margin-left: 10px;
+      margin-right: 10px;
+
+      box-shadow: inset 0 0 2000px rgba(0, 0, 0, 1);
+      grid-template-rows:auto;
+      display: grid;
+     }
+     .square1{
+       margin-left: auto;
+       margin-right: auto;
+       max-width: calc(100vw/3);
+       border-radius: 10%;
+       flex: 1;
+     }
+     img{
+       max-width: inherit;
+       border-radius: 10%;
+       flex: 1;
+     }
+     .square2{
+       line-height: 1;
+       text-align: center;
+       margin-left: auto;
+       margin-right: auto;
+       align-items: center;
+       flex-direction: row;
+       flex: 1;
+     }
+     .square2 .one{
+       color: red;
+       font-size: 2vh;
+     }
+     .square2 .two{
+       font-weight: bold;
+       color:white;
+       font-size: 3vh;
+     }
+     .square2 .three{
+       padding-left: 5px;
+       color: white;
+       font-size: 2vh;
+     }
+     .square2{
+       flex-direction: row;
+       flex: 1;
+       margin-left: auto;
+       margin-right: auto;
+     }
+     .square2 .phone{
+       font-size: 3vw;
+       display: inline-block;
+       width:calc(100vw / 20);
+       height:calc(100vw / 20);
+       float: inherit;
+       box-shadow: inset 0 0 2000px rgba(0, 0, 0, 1);
+       border-radius: 50px;
+       overflow: hidden;
+       cursor: pointer;
+       box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+       transition: all 0.5s ease-out;
+     }
+     .square2 .phone:hover{
+       width: 30vw;
+     }
+     .square2 .phone .icon{
+       display: inline-block;
+       width:calc(100vw / 20);
+       height:calc(100vw / 20);
+       text-align: center;
+       border-radius: 50%;
+       line-height: calc(100vw/20);
+       transition: all 0.5s ease-out;
+     }
+     .square2 .phone:hover .icon{
+       background: linear-gradient(-45deg,#093950,#94c5c1);
+     }
+     .square2 .phone .icon a{
+       font-size: 3vw;
+       line-height: calc(100vw / 20);
+       transition: all 0.5s ease-out;
+       color:  #fff;
+     }
+     .square2 .phone:hover .icon a{
+       color: #fff;
+     }
+     .square2 .phone span{
+       font-size: 2vw;
+       text-align: justify;
+       font-weight: bolder;
+       line-height: calc(100vw / 20);
+       margin-left: 5px;
+       color: white;
+     }
+     .grid-container1{
+       flex-direction: row;
+       flex: 1;
+       margin-top: 10px;
+       margin-left: auto;
+       margin-right: auto;
+       max-width: 100%;
+       max-height: 100%;
+       display: flex;
+       line-height: 0.8;
+       justify-content: space-around;
+     }
+     .grid-container1 a{
+       width:calc(100vw/20);
+       height: calc(100vw/20);
+       color:white;
+       text-align: center;
+       text-decoration: none;
+       box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+       border-radius: 50%;
+       position: relative;
+       overflow: hidden;
+       transition: transform 0.5s;
+     }
+     .grid-container1 a .fa-brands{
+       font-size: 3vw;
+       line-height: calc(100vw/20);
+       position: relative;
+       z-index: 10;
+       transition: color 0.5s;
+     }
+     .grid-container1 a .fa-solid{
+       font-size: 3vw;
+       line-height: calc(100vw/20);
+       position: relative;
+       z-index: 10;
+       transition: color 0.5s;
+     }
+     .grid-container1 a::after{
+       content: '';
+       width: 100%;
+       height: 100%;
+       top: -95px;
+       left: 0;
+       background: linear-gradient(-45deg,#093950,#94c5c1);
+       position: absolute;
+       transition: 0.5s;
+     }
+     .grid-container1 a:hover::after{
+       top: 0;
+     }
+     .grid-container1 a:hover .fa-brands{
+       color: #fff;
+     }
+     .grid-container1 a:hover .fa-solid{
+       color: #fff;
+     }
+     .grid-container1 a:hover{
+       transform: translateY(-10px);
+     }
+     .button{
+     background-image: linear-gradient(to right,#093950,#94c5c1);
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 3vw;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 5px;
+      cursor: pointer;
+      width: calc(100% - 20px);
+     }
+     .button span {
+       cursor: pointer;
+       display: inline-block;
+       position: relative;
+       transition: 0.5s;
+     }
+
+     .button span:after {
+       content: '';
+       position: absolute;
+       opacity: 0;
+       top: 0;
+       right: -20px;
+       transition: 0.5s;
+     }
+     .button:hover{
+       background: linear-gradient(-90deg,#fde781,#f38b6e);
+     }
+
+     .button:hover span {
+       padding-right: 25px;
+     }
+
+     .button:hover span:after {
+       opacity: 1;
+       right: 0;
+     }
+     .container2{
+       width: auto;
+       margin: 10px;
+       height: 50vh;
+       padding-top: 10px;
+       padding-left:  10px;
+       padding-right: auto;
+      box-shadow: inset 0 0 2000px rgba(0, 0, 0, 1);
+      overflow-y:scroll;
+     }
+     .container2::-webkit-scrollbar {
+         display: none;
+     }
+
+     hr{
+       line-height: 0.1;
+       border: 0;
+        border-top: 2px dashed rgba(255, 255, 255, 0.5);
+     }
+     .h1{
+       font-size: 4vw;
+       padding-top: 10px;
+       text-align: left;
+       color: white;
+     }
+     h3{
+       text-align: left;
+       color: white;
+        font-size: 3vw;
+       padding-left: 50px;
+     }
+     p{
+       font-size: 3vw;
+       text-align: left;
+       color: white;
+     }
+     .p1{
+     padding-left: 10px;
+     padding-right: 10px;
+     }
+     .edu ul{
+       font-size: 3vw;
+       padding-left: 50px;
+       padding-right: 50px;
+       text-align: left;
+       color: white;
+     }
+     .exp{
+       width: max-content;
+       column-count: 2;
+       display: flex;
+       text-align: left;
+     }
+     .exp1{
+       width:calc(100vw/3) ;
+       line-break: normal;
+       padding-left: 10px;
+       padding-right: 10px;
+     }
+     .exp2{
+       width:calc(100vw/2) ;
+       padding-right: 10px;
+       margin-right: 10px;
+     }
+     .proj ul{
+       padding-left: 100px;
+       padding-right: 100px;
+       text-align: left;
+        font-size: 3vw;
+       color: white;
+     }
+     .proj a{
+       padding-right: 100px;
+       text-align: left;
+       font-weight: bold;
+       color:  #ADD8E6;
+     }
+     .skill{
+       padding-left: 50px;
+       padding-right: auto;
+      font-size: 3vw;
+       column-count: 2;
+       display: flex;
+       padding-right: 100px;
+       text-align: left;
+       justify-content: space-around;
+         color: white;
+     }
+
+     .ref{
+       column-count: 2;
+       display: flex;
+       padding-left: 50px;
+       padding-right: 50px;
+       text-align: left;
+     }
+
+     .ref .sec{
+       padding-left: 50px;
+     }
+     .container2{
+
+
+
+
+
+
+  }
